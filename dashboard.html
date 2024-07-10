@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<title>Dashboard</title>
+<meta >
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/mune.css">
+
+<style>
+@font-face {
+    font-family:'AdobeArabic-Regular';
+    src: url('css/AdobeArabic-Regular.otf') format('wttfoff'),
+     url('css/AdobeArabic-Regular.otf') format('truetype');
+  }
+
+*{
+font-family:'AdobeArabic-Regular';
+}
+
+h1 , h2 ,h3 ,h4 ,h5, h6, p, div{
+font-family:'AdobeArabic-Regular';
+}
+
+</style>
+
+<!-- script -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Language', 'Speakers (in millions)'],
+          ['نعم',  60],
+          ['غير جاهز',  30],
+          ['جزئيا', 10]
+
+        ]);
+
+      var options = {
+        legend: 'none',
+        pieSliceText: 'label',
+        title:'',
+        pieStartAngle: 100,
+      };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+      }
+    </script>
+
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+     <script type="text/javascript">
+       google.charts.load('current', {'packages':['corechart']});
+       google.charts.setOnLoadCallback(drawChart);
+
+       function drawChart() {
+
+         var data = google.visualization.arrayToDataTable([
+           ['Effort', 'Amount given'],
+           ['انتهى',     90],
+            ['لم يبدأ بعد',     5],
+           ['جاري العمل عليه',     5],
+
+         ]);
+
+         var options = {
+           pieHole: 0.5,
+           pieSliceTextStyle: {
+             color: 'black',
+           },
+           legend: 'none'
+         };
+
+         var chart = new google.visualization.PieChart(document.getElementById('donut_single1'));
+         chart.draw(data, options);
+
+       }
+     </script>
+
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+         <script type="text/javascript">
+           google.charts.load('current', {'packages':['corechart']});
+           google.charts.setOnLoadCallback(drawChart);
+
+           function drawChart() {
+
+             var data = google.visualization.arrayToDataTable([
+               ['Effort', 'Amount given'],
+               ['انتهى',     60],
+               ['لم يبدأ بعد',     30],
+               ['جاري العمل عليه',     10],
+
+             ]);
+
+             var options = {
+               pieHole: 0.5,
+               pieSliceTextStyle: {
+                 color: 'black',
+               },
+               legend: 'none'
+             };
+
+             var chart = new google.visualization.PieChart(document.getElementById('donut_single2'));
+             chart.draw(data, options);
+
+           }
+         </script>
+
+
+         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+             <script type="text/javascript">
+               google.charts.load('current', {'packages':['corechart']});
+               google.charts.setOnLoadCallback(drawChart);
+
+               function drawChart() {
+
+                 var data = google.visualization.arrayToDataTable([
+                   ['Effort', 'Amount given'],
+                   ['انتهى',     30],
+                   ['لم يبدأ بعد',     20],
+                   ['جاري العمل عليه',     50],
+
+
+                 ]);
+
+                 var options = {
+                   pieHole: 0.5,
+                   pieSliceTextStyle: {
+                     color: 'black',
+                   },
+                   legend: 'none'
+                 };
+
+                 var chart = new google.visualization.PieChart(document.getElementById('donut_single3'));
+                 chart.draw(data, options);
+
+               }
+             </script>
+
+
+
+
+             <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                 <script type="text/javascript">
+                   google.charts.load('current', {'packages':['corechart']});
+                   google.charts.setOnLoadCallback(drawChart);
+
+                   function drawChart() {
+
+                     var data = google.visualization.arrayToDataTable([
+                       ['Effort', 'Amount given'],
+                       ['انتهى',     30],
+                       ['لم يبد العمل عليه',     40],
+                       ['جاري العمل عليه ',     30],
+                     ]);
+
+                     var options = {
+                       pieHole: 0.5,
+                       pieSliceTextStyle: {
+                         color: 'black',
+                       },
+                       legend: 'none'
+                     };
+
+                     var chart = new google.visualization.PieChart(document.getElementById('donut_single4'));
+                     chart.draw(data, options);
+
+                   }
+                 </script>
+
+
+
+                 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                     <script type="text/javascript">
+                       google.charts.load("current", {packages:["corechart"]});
+                       google.charts.setOnLoadCallback(drawChart);
+                       function drawChart() {
+                         var data = google.visualization.arrayToDataTable([
+                           ['Language', 'Speakers (in millions)'],
+                           ['على المسار', 30],
+                            ['متاخر', 40],
+                           ['متاخره جزئيا', 10],
+                           ['لم تبدأ',  20],
+
+                         ]);
+
+                       var options = {
+                         legend: 'none',
+                         pieSliceText: 'label',
+                         title:'',
+                         pieStartAngle: 100,
+                       };
+
+                         var chart = new google.visualization.PieChart(document.getElementById('tamweel1'));
+                         chart.draw(data, options);
+                       }
+                     </script>
+
+
+                     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                         <script type="text/javascript">
+                           google.charts.load("current", {packages:["corechart"]});
+                           google.charts.setOnLoadCallback(drawChart);
+                           function drawChart() {
+                             var data = google.visualization.arrayToDataTable([
+                               ['Language', 'Speakers (in millions)'],
+                               ['على المسار', 30],
+                                ['متاخر', 40],
+                               ['متاخره جزئيا', 10],
+                               ['لم تبدأ',  20],
+
+                             ]);
+
+                           var options = {
+                             legend: 'none',
+                             pieSliceText: 'label',
+                             title:'',
+                             pieStartAngle: 100,
+                           };
+
+                             var chart = new google.visualization.PieChart(document.getElementById('tamweel2'));
+                             chart.draw(data, options);
+                           }
+                         </script>
+
+                         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                             <script type="text/javascript">
+                               google.charts.load("current", {packages:["corechart"]});
+                               google.charts.setOnLoadCallback(drawChart);
+                               function drawChart() {
+                                 var data = google.visualization.arrayToDataTable([
+                                   ['Language', 'Speakers (in millions)'],
+                                   ['على المسار', 30],
+                                    ['متاخر', 40],
+                                   ['متاخره جزئيا', 10],
+                                   ['لم تبدأ',  20],
+
+                                 ]);
+
+                               var options = {
+                                 legend: 'none',
+                                 pieSliceText: 'label',
+                                 title:'',
+                                 pieStartAngle: 100,
+                               };
+
+                                 var chart = new google.visualization.PieChart(document.getElementById('tamweel3'));
+                                 chart.draw(data, options);
+                               }
+                             </script>
+
+                             <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                                 <script type="text/javascript">
+                                   google.charts.load("current", {packages:["corechart"]});
+                                   google.charts.setOnLoadCallback(drawChart);
+                                   function drawChart() {
+                                     var data = google.visualization.arrayToDataTable([
+                                       ['Language', 'Speakers (in millions)'],
+                                       ['على المسار', 30],
+                                        ['متاخر', 40],
+                                       ['متاخره جزئيا', 10],
+                                       ['لم تبدأ',  20],
+
+                                     ]);
+
+                                   var options = {
+                                     legend: 'none',
+                                     pieSliceText: 'label',
+                                     title:'',
+                                     pieStartAngle: 100,
+                                   };
+
+                                     var chart = new google.visualization.PieChart(document.getElementById('tamweel4'));
+                                     chart.draw(data, options);
+                                   }
+                                 </script>
+
+                                 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                                     <script type="text/javascript">
+                                       google.charts.load("current", {packages:["corechart"]});
+                                       google.charts.setOnLoadCallback(drawChart);
+                                       function drawChart() {
+                                         var data = google.visualization.arrayToDataTable([
+                                           ['Language', 'Speakers (in millions)'],
+                                           ['على المسار', 30],
+                                            ['متاخر', 40],
+                                           ['متاخره جزئيا', 10],
+                                           ['لم تبدأ',  20],
+
+                                         ]);
+
+                                       var options = {
+                                         legend: 'none',
+                                         pieSliceText: 'label',
+                                         title:'',
+                                         pieStartAngle: 100,
+                                       };
+
+                                         var chart = new google.visualization.PieChart(document.getElementById('tamweel5'));
+                                         chart.draw(data, options);
+                                       }
+                                     </script>
+
+
+
+
+<script>
+function  content1() {
+  var content1=document.getElementById("content1").innerHTML = '<div style="color=#525254; font-size:20px; "> عقد ورشتين عمل بهدف عرض مقنطفات البرنامج&nbsp; <img src="image/star.png" width=20px; height=20px; /> </div>'+'<div style="color=#525254; font-size:20px; ">عقد ورشتين عمل بهدف عرض مقنطفات البرنامج&nbsp; <img src="image/star.png" width=20px; height=20px; /> </div>'+'<div style="color=#525254; font-size:20px; ">عقد ورشتين عمل بهدف عرض مقنطفات البرنامج&nbsp; <img src="image/star.png" width=20px; height=20px; /> </div>'+'<div style="color=#525254; font-size:20px; ">عقد ورشتين عمل بهدف عرض مقنطفات البرنامج&nbsp; <img src="image/star.png" width=20px; height=20px; /> </div>';
+}
+function  content2() {
+  var content1=document.getElementById("content2").innerHTML = '<table ><tr><th>الخطوات القادمه</th><th>اخر التحديثات</th><th>اللجنة</th></tr><tr><td>عقد اجتماع</td><td>الخروج بسبع توصيات</td><td>خدمة ضيوف الرحمن</td></tr><tr><td>اخد موعد اجتماع</td><td>الاجتماع مع اللجنه الاستشاريه</td><td>استراتجية وحكومة القطاع</td></tr><tr><td>ارسال خطاب</td><td>قرار تاجيل العمل</td><td>ادارة الحشود</td></tr></table>';
+}
+function  replay() {
+  var content1=document.getElementById("replay").innerHTML = '<div class="col col-md-2" ></div><div class="col col-md-2" style="padding-top:11px;" > <button class="button" onclick="done()">ارسال</button> </div><div class="col col-md-4"><textarea id="subject"  placeholder="..من فضلك قم بكتابة الرد " rows="2" cols="70" style="text-align:right; color:#525254;"></textarea></div>';
+}
+
+function  done() {
+  var content1=document.getElementById("replay").innerHTML = '<div class="col col-md-1"></div><div class="col col-md-5" ></div><div class="col col-md-6"><div style="color:#525254; font-size:20px; text-align:right; "> اعتماد خطاب لمعالي امين اللجنه الاستراتجيهه &nbsp; <img src="image/check2.png" width=20px; height=20px; /> </div></div>';
+}
+
+
+function  replay1() {
+  var content1=document.getElementById("replay1").innerHTML = '<div class="col col-md-2" ></div><div class="col col-md-2" style="padding-top:11px;" > <button class="button" onclick="done1()">ارسال</button> </div><div class="col col-md-4"><textarea id="subject"  placeholder="..من فضلك قم بكتابة الرد " rows="2" cols="70" style="text-align:right; color:#525254;"></textarea></div>';
+}
+
+function  done1() {
+  var content1=document.getElementById("replay1").innerHTML = '<div class="col col-md-1"></div><div class="col col-md-5" ></div><div class="col col-md-6"><div style="color:#525254; font-size:20px; text-align:right; "> التوجيه بخصوص عقد لجنة البرنامج القادمه &nbsp; <img src="image/check2.png" width=20px; height=20px; /> </div></div>';
+}
+
+function  replay2() {
+  var content1=document.getElementById("replay2").innerHTML = '<div class="col col-md-2" ></div><div class="col col-md-2" style="padding-top:11px;" > <button class="button" onclick="done2()">ارسال</button> </div><div class="col col-md-4"><textarea id="subject"  placeholder="..من فضلك قم بكتابة الرد " rows="2" cols="70" style="text-align:right; color:#525254;"></textarea></div>';
+}
+
+function  done2() {
+  var content1=document.getElementById("replay2").innerHTML = '<div class="col col-md-1"></div><div class="col col-md-5" ></div><div class="col col-md-6"><div style="color:#525254; font-size:20px; text-align:right; ">اعتماد خطاب لمعالي وزير الماليه &nbsp; <img src="image/check2.png" width=20px; height=20px; /> </div></div>';
+}
+
+function  accept2() {
+  var content1=document.getElementById("second").innerHTML = '<div class="col col-md-1"></div><div class="col col-md-5 accept" > مقبول </div><div class="col col-md-6"><div style="color:#525254; font-size:20px; text-align:right; "> اجتماع مع مسافر بخصوص الميزانية &nbsp; <img src="image/check2.png" width=20px; height=20px; /></div></div>';
+}
+
+function  reject2() {
+  var content1=document.getElementById("second").innerHTML = '<div class="col col-md-1"></div><div class="col col-md-5 reject" > مرفوض</div><div class="col col-md-6"><div style="color:#525254; font-size:20px; text-align:right; "> اجتماع مع مسافر بخصوص الميزانية &nbsp; <img src="image/check2.png" width=20px; height=20px; /></div></div>';
+}
+
+
+function  accept1() {
+  var content1=document.getElementById("first").innerHTML = '<div class="col col-md-1"></div><div class="col col-md-4 accept" > مقبول </div><div class="col col-md-7"><div style="color:#525254; font-size:20px; text-align:right; "> اجتماع مع الهيئة العامة للاوقاف بخصوص توقيع عقدة &nbsp; <img src="image/check2.png" width=20px; height=20px; /></div></div>';
+}
+
+function  reject1() {
+  var content1=document.getElementById("first").innerHTML = '<div class="col col-md-1"></div><div class="col col-md-4 reject" > مرفوض</div><div class="col col-md-7"><div style="color:#525254; font-size:20px; text-align:right; "> اجتماع مع الهيئة العامة للاوقاف بخصوص توقيع عقدة &nbsp; <img src="image/check2.png" width=20px; height=20px; /></div></div>';
+}
+
+</script>
+
+
+<!--script -->
+</head>
+<body >
+
+<!-- Sidebar -->
+<header>
+<div class="w3-sidebar w3-bar-block w3-card " style="width:15%;right:0; background-color:#9b7745; ">
+
+  <h3  style="text-align:center; color:#fff; padding:10px; font-family:'AdobeArabic-Regular'; ">القائمة  الرئيسية</h3>
+    <hr>
+
+  <a href="#" class="w3-bar-item font_bar" style="text-align:right; ">  الصفحة الرئيسة&nbsp;&nbsp;&nbsp;&nbsp; <image src="image/home.png" height=20px; width=20px; /> </a>
+<a href="#" class="w3-bar-item font_bar" style="text-align:right;">ملف التعريف &nbsp;&nbsp;&nbsp;&nbsp;<image src="image/user.png" height=20px; width=20px; /></a>
+<a href="#" class="w3-bar-item font_bar" style="text-align:right;"> اخر التحديثات &nbsp;&nbsp;&nbsp;&nbsp;<image src="image/update.png" height=20px; width=20px; /></a>
+<a href="#order" class="w3-bar-item font_bar" style="text-align:right;"> طلبات الدعم والاجتماعات &nbsp;&nbsp;&nbsp;&nbsp;<image src="image/support.png" height=20px; width=20px; /></a>
+<a href="#" class="w3-bar-item font_bar" style="text-align:right;"> التقارير &nbsp;&nbsp;&nbsp;&nbsp;<image src="image/paper.png" height=20px; width=20px; /></a>
+  <a href="#" class="w3-bar-item font_bar" style="text-align:right;"> التعريف باللجان&nbsp;&nbsp;&nbsp;&nbsp;<image src="image/planning.png" height=20px; width=20px; /></a>
+    <a href="#" class="w3-bar-item font_bar" style="text-align:right;"> التعريف بالبرنامج&nbsp;&nbsp;&nbsp;&nbsp;<image src="image/sublogo.png" height=25px; width=22px; /></a>
+      <a href="#" class="w3-bar-item font_bar" style="text-align:right;">التعريف بالموظفين&nbsp;&nbsp;&nbsp;&nbsp;<image src="image/man1.png" height=20px; width=20px; /></a>
+  <a href="#" class="w3-bar-item font_bar" style="text-align:right;"> تسجيل الخروج &nbsp;&nbsp;&nbsp;&nbsp;<image src="image/logout.png" height=20px; width=20px; /></a>
+</div>
+
+<!-- Page Content -->
+<div style="">
+
+<div  class="w3-container" style="width:150%;  background-color:#525254; height:80px;  box-shadow: 5px 5px #888888;">
+  <div class="row">
+    <div class="col-8 "> </div>
+
+    <div class="col-8 ">
+      <div class="row">
+          <div class="col-2 " style="background-color:#e6e7e8;">
+<image src="image/logo.png" height=80px; width=180px; />
+      </div>
+      <div class="col-1 right_bar">
+    <image src="image/e.png" height=25px; width=25px; />
+    </div>
+
+      <div class="col-2 ">  </div>
+      <div class="col-2 " style="padding-top:27px; padding-left:210px;">  <button class="buttonsearch">بحث</button> </div>
+      <div class="col-5 " style="padding-top:28px; ">
+
+         <input type="text" size=68px; placeholder="البحث" class="search"/> </div>
+
+
+    </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div style="background-color:#000;">
+
+</div>
+</header>
+
+<div class="contentt"> <!-- contentt -->
+  <div class="row" style="  padding-bottom:20px;">
+<div class="col-2 " > </div>
+<div class="col-2 " > </div>
+<div class="col-2 " > </div>
+<div class="col-2 " > </div>
+<div class="col-2 " > </div>
+
+<div class="col-2 title " >
+<h1 > تحديث الرئيس </h1>
+</div>
+</br>
+  </div>
+
+
+
+  <div class="sub-contenett" > <!-- first row -->
+    <div class="row-padding">
+
+<div class="row " style="padding-right:12px;">
+  <div class=" col mr-2">   </div>
+  <div class=" col mr-2">   </div>
+    <div class=" col mr-1 subtitle " >
+      <div class="row" >
+        <div class=" col-mr-8" style="padding-right:100px; padding-left:33px;  padding-top:10px;">   <image src="image/update.png" height=50px; width=50px; /></div>
+        <div class=" col-mr-8 " style="padding-top:10px; ">   <p > اخـــر التحديثـــــــــــــات </p> </div>
+
+    </div>
+        </div>
+          </div>
+
+</br>
+
+<div class="row">
+    <div class="col-xl-7 col-md-4 mb-4">
+                  <div class="card shadow h-100 py-2" style="border-right:10px solid #9b7745;">
+                    <div class="card-body">
+                      <div class="row ">
+                        <div class="col mr-2" >
+
+                          <div class="row">
+                            <div class="col col-md-2" >
+                                <image src="image/refresh.png" height=100px; width=100px; />
+
+                            </div>
+
+                            <div class="col col-md-10">
+                              <div id="content2" onclick="content2()">
+
+                         <a href="#" style="text-decoration:none;" class="a">
+                          <div class="title-sub2-contentt" style="text-align:right;">اللجان المحدثة</div>
+                           </a>
+                          <div class="title-sub3-contentt">5</div>
+                        </div>
+                      </div>
+                        </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+                      <image src="image/share.png" height=20px; width=20px; style="margin-left:9px;" />
+                  </div>
+                </div>
+
+                <div class="col-xl-5 col-md-4 mb-4">
+                              <div class="card shadow h-100 py-2" style="border-right:10px solid #9b7745;">
+                                <div class="card-body">
+                                  <div class="row ">
+                                    <div class="col mr-2" >
+
+                                        <div class="row">
+                                          <div class="col mr-2" >
+                                              <image src="image/man.png" height=100px; width=100px; />
+
+                                          </div>
+                                          <div  id="content1">
+                                        <div class="col mr-2" onclick="content1()" >
+                                          <a href="#" style="text-decoration:none;" class="a">
+                                        <div class="title-sub2-contentt" >الاجتماعات الخارجية</div>
+                                          </a>
+                                        <div class="title-sub3-contentt">18</div>
+                                        </div>
+                                        </div>
+                                      </div>
+
+                                    </div>
+
+                                  </div>
+                                </div>
+                                  <image src="image/share.png" height=20px; width=20px; style="margin-left:9px;" />
+                              </div>
+                            </div>
+
+</div>
+</div> <!-- end first row -->
+
+
+
+<div class="row-padding"> <!-- scond row -->
+<div class="row">
+
+
+
+            <div class="col-xl-12 col-md-4 mb-4">
+                          <div class="card shadow h-100 py-2" style="border-right:10px solid #9b7745;">
+                            <div class="card-body">
+                              <div class="row ">
+                                <div class="col mr-2" >
+
+                                    <div class="row">
+
+                                    <div class="col mr-4" style="margin-left:100px; font-size:20px;">
+                                      <div id="donut_single1" style="width: 200px; height: 200px;"></div>
+                                      <div style="color:#525254; margin-left:40px;">المواءمة مع الجهة المالكه </div>
+                                      <div id="donut_single2" style="width: 200px; height: 200px;"></div>
+                                      <div style="color:#525254; margin-left:50px;"> توفر خط الاساس </div>
+                                    </div>
+
+                                    <div class="col mr-4" style="font-size:20px;" >
+                                    <div id="donut_single3" style="width: 200px; height: 200px;"></div>
+                                    <div style="color:#525254; margin-left:50px;"> اعتماد المستهدفات </div>
+                                    <div id="donut_single4" style="width: 200px; height: 200px;"></div>
+                                       <div style="color:#525254; margin-left:50px;"> موافقة مركز أداء </div>
+                                    </div>
+
+                                  <div class="col mr-4" style="border-left: 1px dashed #007852; font-size:20px;" >
+                                  <div class="title-sub2-contentt" style="text-align: right">المــــؤشـــرات</div>
+                                  <a href="#" style="text-decoration: none;" class="a">
+                                     <div class="title-sub3-contentt" >
+                                     </br>
+                                    <div id="piechart" style="width:400px; height:300px; padding-left:10px;"></div>
+
+                                  </div>
+                                </a>
+                                  </div>
+
+                                </div>
+                                <div class="row" style="margin-left:300px; margin-top:30px;">
+                                <div class="col mr-4">
+                                  <div class="col mr-4">   </div>
+                              <a href="#" style="text-decoration: none;">  <div class="level3">المستوى الرابع</div> </a>
+                                </div>
+                                    <div class="col mr-4">   </div>
+                                  <div class="col mr-4">
+                                <div class="level4">المستوى الثالث </div>
+                                </div>
+                              </div>
+                              </div>
+
+                              </div>
+                            </div>
+                              <image src="image/share.png" height=20px; width=20px; style="margin-left:9px;" />
+                          </div>
+                        </div>
+
+</div>
+</div> <!-- end scond row -->
+
+
+<div class="row-padding"> <!-- theird row -->
+<div class="row">
+
+
+
+            <div class="col-xl-12 col-md-4 mb-4">
+                          <div class="card shadow h-100 py-2" style="border-right:10px solid #9b7745;">
+                            <div class="card-body">
+                              <div class="title-sub2-contentt" style="text-align:right;">المبادرات</div>
+                            </br>
+                              <div class="row ">
+
+                                <div class="col mr-10 borderChart" >
+                                 <div class="chartTmweel" style="padding-bottom:31px;">حالة المبادة الحالية لدى مركز اداء</div>
+
+                                 <div id="tamweel1"> </div>
+                                 </div>
+
+                                  <div class="col mr-10 borderChart" >
+                                    <div  class="chartTmweel"> حالة المبادره بعد اعتماد  بطاقة اداء المحدثه</div>
+                                    <div id="tamweel2" > </div>
+                                  </div>
+
+                                    <div class="col mr-10 borderChart">
+                                      <div class="chartTmweel" style="padding-bottom:31px;">حالة اعتماد بطاقة اداء</div>
+
+                                      <div id="tamweel3"> </div>
+                                     </div>
+                                  <div class="col mr-10 borderChart" >
+                                    <div class="chartTmweel"> حالة التعارضات في الحبة المالكه او التكاليف</div>
+                                    <div id="tamweel4"> </div>
+                                  </div>
+                                  <div class="col mr-10" >
+                                    <div class="chartTmweel" style="padding-bottom:31px;">حالة اعتماد تمويل المبادرة</div>
+
+                                    <div id="tamweel5"> </div>
+                                  </div>
+
+                              </div>
+                            </div>
+                              <image src="image/share.png" height=20px; width=20px; style="margin-left:9px;" />
+                          </div>
+                          <div id="order"></div>
+                        </div>
+
+</div>
+
+</div> <!-- end theird row -->
+
+
+<div class="row " style="padding-right:35px;" >
+  <div class=" col mr-2">   </div>
+  <div class=" col mr-2">   </div>
+    <div class=" col mr-1 subtitle " >
+      <div class="row" >
+        <div class=" col-mr-8" style="padding-right:70px; padding-left:30px;  padding-top:10px;">   <image src="image/support.png" height=50px; width=50px; /></div>
+        <div class=" col-mr-8 " style="padding-top:10px;">   <p > طلبات الدعم والاجتماعات </p> </div>
+
+    </div>
+
+        </div>
+          </div>
+
+</br>
+
+          <div class="row-padding"> <!-- theird row -->
+          <div class="row" >
+
+
+            <div class="col-xl-6 col-md-4 mb-4" >
+                          <div class="card shadow h-100 py-2" style="border-right:10px solid #9b7745;">
+                            <div class="card-body">
+                              <div class="title-sub2-contentt " style="text-align:right;">طلبات الاجتماعات</div>
+                            </br>
+
+
+                              <div class="row" id="first">
+                                <div class="col col-md-1"></div>
+                                <div class="col col-md-4" > <button class="button" onclick="reject1()" style="background-color:#9b7745;">رفض</button> &nbsp; <button class="button" onclick="accept1()">قبول</button> </div>
+                                <div class="col col-md-7">
+                               <div style="color:#525254; font-size:20px; text-align:right; "> اجتماع مع الهيئة العامة للاوقاف بخصوص توقيع عقد&nbsp; <img src="image/question.png" width=20px; height=20px; /> </div>
+                             </div>
+                             </div>
+
+                             <hr>
+                             <div class="row" id="second">
+                               <div class="col col-md-1"></div>
+                               <div class="col col-md-5" >  <button class="button" onclick="reject2()" style="background-color:#9b7745;">رفض</button> &nbsp; <button class="button" onclick="accept2()">قبول</button> </div>
+                               <div class="col col-md-6">
+                              <div style="color:#525254; font-size:20px; text-align:right; "> اجتماع مع مسافر بخصوص الميزانية &nbsp; <img src="image/question.png" width=20px; height=20px; /> </div>
+                            </div>
+                            </div>
+
+
+
+
+
+
+                            </div>
+                              <image src="image/share.png" height=20px; width=20px; style="margin-left:9px;" />
+                          </div>
+                        </div>
+
+
+
+
+
+                      <div class="col-xl-6 col-md-4 mb-4" >
+                                    <div class="card shadow h-100 py-2" style="border-right:10px solid #9b7745;">
+                                      <div class="card-body">
+                                        <div class="title-sub2-contentt " style="text-align:right;">طلبات الدعم</div>
+                                      </br>
+                                       <div class="row" id="replay1">
+                                         <div class="col col-md-1"></div>
+                                         <div class="col col-md-5" > <a href="#order" class="replay" onclick="replay1()"> رد <img src="image/bubble.png" width=20px; height=20px; /> </a> </div>
+                                         <div class="col col-md-6">
+                                        <div style="color:#525254; font-size:20px; text-align:right; ">  التوجيه بخصوص عقد لجنة البرنامج القادمه &nbsp; <img src="image/question.png" width=20px; height=20px; /> </div>
+                                      </div>
+                                      </div>
+
+                                      <hr>
+                                      <div class="row" id="replay2">
+                                        <div class="col col-md-1"></div>
+                                        <div class="col col-md-5" > <a href="#order" class="replay" onclick="replay2()"> رد <img src="image/bubble.png" width=20px; height=20px; /> </a> </div>
+                                        <div class="col col-md-6">
+                                       <div style="color:#525254; font-size:20px; text-align:right; "> اعتماد خطاب لمعالي وزير المالية &nbsp; <img src="image/question.png" width=20px; height=20px; /> </div>
+                                     </div>
+                                     </div>
+
+                                     <hr>
+                                     <div class="row" id="replay" >
+                                       <div class="col col-md-1"></div>
+                                       <div class="col col-md-5" > <a href="#order" class="replay" onclick="replay()"> رد <img src="image/bubble.png" width=20px; height=20px; /> </a> </div>
+                                       <div class="col col-md-6">
+                                      <div style="color:#525254; font-size:20px; text-align:right; "> اعتماد خطاب لمعالي امين اللجنه الاستراتجيهه &nbsp; <img src="image/question.png" width=20px; height=20px; /> </div>
+                                     </div>
+                                     </div>
+
+
+
+
+
+                                      </div>
+                                        <image src="image/share.png" height=20px; width=20px; style="margin-left:9px;" />
+                                    </div>
+                                  </div>
+
+          </div>
+          </div> <!-- end theird row -->
+
+  </div> <!-- end sub content -->
+
+
+  <div class="row" style="  padding-bottom:20px;">
+<div class="col-2 " > </div>
+<div class="col-2 " > </div>
+<div class="col-2 " > </div>
+<div class="col-2 " > </div>
+<div class="col-2 " > </div>
+
+<div class="col-2 title " >
+<h1 >المعلـــــومات </h1>
+</div>
+</br>
+  </div>
+
+<div class="sub-contenett" > <!-- second sub content -->
+
+
+
+  <div class="row-padding">
+
+  <div class="row " style="padding-right:12px;">
+  <div class=" col mr-2">   </div>
+  <div class=" col mr-2">   </div>
+  <div class=" col mr-1 subtitle " >
+    <div class="row" >
+      <div class=" col-mr-8" style="padding-right:180px; padding-left:33px;  padding-top:10px;">   <image src="image/paper.png" height=50px; width=50px; /></div>
+      <div class=" col-mr-8 " style="padding-top:10px; ">   <p > التــــقاريــــــــر </p> </div>
+
+  </div>
+      </div>
+        </div>
+
+  </br>
+
+  <div class="row" >
+  <div class="col-xl-12 col-md-4 mb-4">
+                <div class="card shadow h-100 py-2" style="border-right:10px solid #9b7745;">
+                  <div class="card-body">
+                    <div class="row ">
+                      <div class="col mr-2" >
+
+                        <div class="row">
+                          <div class="col col-md-2" >
+                              <image src="image/weeklyreport.png" height=100px; width=100px; />
+
+                          </div>
+
+                          <div class="col col-md-10">
+                            <div >
+                        <div class="title-sub2-contentt" style="text-align:right;">التقارير الأسبوعية</div>
+
+                        <div class="title-sub3-contentt">5</div>
+                      </div>
+                    </div>
+                      </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+
+  </div>
+  </div> <!-- end first row -->
+
+
+
+
+
+
+</div><!-- end second sub content -->
+
+
+
+
+
+
+</div> <!-- end contentt -->
+
+
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+<!-- Footer -->
+<footer>
+</br>
+      <p> جميع الحقوق محفوظة لـبرنامج خدمة ضيوف الرحمن ©</p>
+</footer>
+<!-- End of Footer -->
+
+<script src="js/demo/script.js"></script>
+
+</body>
+</html>
